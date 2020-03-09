@@ -2,6 +2,9 @@ library(tidyverse)
 library(h2o)
 h2o.init()
 
+mpg %>% skim()
+
+
 mpg <- as.h2o(mpg)
 mpgglm <- h2o.glm(x = c("year","cyl","displ"),y = "cty",training_frame = mpg,family = "gaussian",lambda = 0,compute_p_values = T)
 
