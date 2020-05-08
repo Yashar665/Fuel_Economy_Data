@@ -12,3 +12,4 @@ mpgglm@model$coefficients_table
 #all input variables are significant predictors, beause p value is less than alpha(0.05) #year variable
 #is not strong predictor, but displ and cyl variables are stronger than year variable according to coefficients
 
+###
